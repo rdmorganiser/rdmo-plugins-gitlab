@@ -3,14 +3,14 @@ requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "rdmo-gitlab"
+name = "rdmo-plugins-gitlab"
 authors = [
     {name = "RDMO Arbeitsgemeinschaft", email = "rdmo-team@listserv.dfn.de"},
 ]
 maintainers = [
     {name = "Jochen Klar", email = "mail@jochenklar.de"},
 ]
-description = "Plugin for RDMO to send tasks to GitLab"
+description = "Plugin for RDMO to interact with GitLab"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {file = "LICENSE"}
@@ -32,6 +32,9 @@ dependencies = [
     "requests>=2.31",
 ]
 dynamic = ["version"]
+
+[project.urls]
+repository = "https://github.com/rdmorganiser/rdmo-plugins-gitlab"
 
 [tool.setuptools]
 packages = ["rdmo_gitlab"]

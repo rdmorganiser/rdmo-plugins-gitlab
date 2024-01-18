@@ -1,5 +1,5 @@
-rdmo-gitlab
-===========
+rdmo-plugins-gitlab
+===================
 
 This repo implements two plugins for [RDMO](https://github.com/rdmorganiser/rdmo):
 
@@ -15,7 +15,7 @@ Setup
 Install the plugin in your RDMO virtual environment using pip (directly from GitHub):
 
 ```bash
-pip install git+https://github.com/rdmorganiser/rdmo-gitlab
+pip install git+https://github.com/rdmorganiser/rdmo-plugins-gitlab
 ```
 
 An *App* has to be registered with the particular GitLab instance. For GitLab.com, go to https://gitlab.com/-/profile/applications and create an application with the callback URL `https://<rdmo_url>/services/oauth/gitlab/callback/` and the scope `api`.
