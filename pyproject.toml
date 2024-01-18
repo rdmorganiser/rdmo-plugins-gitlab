@@ -10,7 +10,7 @@ authors = [
 maintainers = [
     {name = "Jochen Klar", email = "mail@jochenklar.de"},
 ]
-description = "Plugin for RDMO to interact with GitLab"
+description = "GitLab Plugins for RDMO."
 readme = "README.md"
 requires-python = ">=3.8"
 license = {file = "LICENSE"}
