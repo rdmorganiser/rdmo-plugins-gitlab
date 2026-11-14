@@ -1,0 +1,16 @@
+{% extends 'core/page.html' %}
+{% load i18n core_tags %}
+
+{% block page %}
+
+    <h1>{% blocktrans %}Successful Export to {{ source_title }}{% endblocktrans %}</h1>
+
+    <ul>
+        {% for export in processed_exports %}
+            <li>{{ export.label }}: {{ export.processing_status }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ repo_html_url }}">{% trans 'Go to GitLab repository' %}</a>
+
+{% endblock %}
